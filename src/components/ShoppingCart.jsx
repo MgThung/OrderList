@@ -70,13 +70,13 @@ function ShoppingCart() {
 	
 
 	
-	const addOrder=async (order_list,totalprice)=>{
+	const addOrder=async (a,b)=>{
 		
 		const result=await axios.get("http://localhost:8080/order");
 		
 		
 		if(result.data.length===0){
-			const order={order_list,totalprice}
+			const order={a,b}
 			axios.post("http://localhost:8080/order",order)
 		}
 		}
