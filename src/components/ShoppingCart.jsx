@@ -39,13 +39,13 @@ function ShoppingCart() {
 			loadItems();
 		}
 	}
-	// const deleteOrderAll=async()=>{
-	// 	let isDelete= window.confirm("Are you sure? This order will be bought !");
-	// 	if (isDelete){
-	// 		await axios.delete(`http://localhost:8080/order-list/`)
-	// 		loadItems();
-	// 	}
-	// }
+	const deleteOrderAll=async(id)=>{
+		let isDelete= window.confirm("Are you sure? This order will be bought !");
+		if (isDelete){
+			await axios.delete(`http://localhost:8080/order-list/${id}`)
+			loadItems();
+		}
+	}
 
 	const inDec=async(a,b,c,d,e)=>{
 		if(c==="dec"){
@@ -69,35 +69,18 @@ function ShoppingCart() {
 	}
 	
 
-	// let isExisting=false;
-	// const addOrder=async (a,b)=>{
-	// 	const result=await axios.get("http://localhost:8080/order");
-	// 	if(result.data.length===0){
-	// 		const order={name:a,price:totalPrice,}
-	// 		axios.post("http://localhost:8080/order",order)
-	// 	}
-	// 	else{
-	// 		result.data.map((orderItem)=>{
-	// 			if(a=== orderItem.name){
-	// 				orderItem.qty+=1;
-	// 				const order={
-	// 					name:a,
-	// 					price:totalPrice,
-						
-	// 				}
-	// 				axios.put(`http://localhost:8080/order/${orderItem.id}`,order)
-	// 			}
-	// 		})
-	// 		if(isExisting == false){
-	// 			const order={
-	// 				name:a,
-	// 				price:totalPrice,
-				
-	// 			}
-	// 			axios.post("http://localhost:8080/order",order)
-	// 		}
-	// 	}
-	// }
+	
+	const addOrder=async (order_list,totalprice)=>{
+		
+		const result=await axios.get("http://localhost:8080/order");
+		
+		
+		if(result.data.length===0){
+			const order={order_list,totalprice}
+			axios.post("http://localhost:8080/order",order)
+		}
+		}
+
 
 	
 	return (
@@ -208,7 +191,8 @@ function ShoppingCart() {
 					
 					
 					</div>
-						<button className="btn checkout-btn" >
+						<button className="btn checkout-btn" 
+							onClick={()=>{addOrder(items,total);}}>
 							Add to oder-list
 						</button>
 				

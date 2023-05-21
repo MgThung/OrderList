@@ -4,7 +4,7 @@ import React, {
 } from "react";
 import { Link } from "react-router-dom";
 import "../style/main.css";
-import "../style/main.css";
+
 import { GiShoppingBag } from "react-icons/gi";
 import RatingStars from "./RatingStars";
 import ShoppingCart from "./ShoppingCart";
@@ -65,12 +65,22 @@ function Home(props) {
 	return (
     <div>
         	<div className="navbar">
-				<h3 className="logo">Logo</h3>
-				<Link to="/order">
+				<Link to="/home"><h3 className="logo">Logo</h3></Link>
+				
+				<div className="right">
+				<Grid container my={2}>
+					<Grid item xs={6}>
+					<Link to="/">Log Out</Link>
+					</Grid>
+					<Grid item xs={6}>
+					<Link to="/order">
 					<button className="btn shopping-cart-btn">
 						<GiShoppingBag size={24} />
 					</button>
-				</Link>
+					</Link>
+					</Grid>				
+				</Grid>
+				</div>
 				
 			</div>
 			<main >

@@ -55,41 +55,54 @@
   ],
   "order-list": [
     {
-      "name": "Vivamus vitae",
-      "price": 199,
-      "qty": 4,
-      "id": 1
-    },
-    {
-      "name": "Fusce sit amet",
-      "price": 229,
-      "qty": 5,
-      "id": 2
-    },
-    {
-      "name": "Etiam volutpat aliquam",
-      "price": 99,
-      "qty": 6,
-      "id": 3
-    },
-    {
       "name": "Ultrices nisl",
       "price": 85,
-      "qty": 2,
+      "qty": 1,
       "id": 4
+    },
+    {
+      "name": "Vivamus vitae",
+      "price": 199,
+      "qty": 1,
+      "id": 5
     },
     {
       "name": "Lorem ipsum dolor",
       "price": 119,
-      "qty": 3,
-      "id": 5
-    },
-    {
-      "name": "Curabitur in elementum tortor",
-      "price": 149,
       "qty": 1,
       "id": 6
+    },
+    {
+      "name": "Etiam volutpat aliquam",
+      "price": 99,
+      "qty": 1,
+      "id": 7
     }
   ],
-  "order": []
+  "order": [
+    {
+      "a": [
+        {
+          "name": "Fusce sit amet",
+          "price": 229,
+          "qty": 5,
+          "id": 2
+        },
+        {
+          "name": "Etiam volutpat aliquam",
+          "price": 99,
+          "qty": 6,
+          "id": 3
+        },
+        {
+          "name": "Lorem ipsum dolor",
+          "price": 119,
+          "qty": 3,
+          "id": 5
+        }
+      ],
+      "b": "2096.00",
+      "id": 1
+    }
+  ]
 }

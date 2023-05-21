@@ -37,6 +37,10 @@
 	padding: 15px 2rem;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+}
+.oderh1{
+	padding-top: 1rem;
 }
 
 .navbar .logo {
@@ -82,7 +86,9 @@ main {
 	flex-wrap: wrap;
 	width: 100%;
 }
-
+.right{
+	width: 30%;
+}
 .product {
 	justify-content: space-between;
 	cursor: pointer;
