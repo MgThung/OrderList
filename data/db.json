@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Vivamus vitae",
+      "rating": 4.3,
+      "description": "Vivamus vitae neque accumsan, ultrices nisl et, viverra magna.",
+      "price": 199
+    },
+    {
+      "id": 2,
+      "name": "Fusce sit amet",
+      "rating": 4.2,
+      "description": "Maecenas fermentum urna egestas urna ullamcorper sodales.  ",
+      "price": 229
+    },
+    {
+      "id": 3,
+      "name": "Etiam volutpat aliquam",
+      "rating": 3.2,
+      "description": "Praesent et orci vel nunc interdum aliquet et non dolor. ",
+      "price": 99
+    },
+    {
+      "id": 4,
+      "name": "Lorem ipsum dolor",
+      "rating": 4.8,
+      "description": "Duis nibh sapien, placerat non nulla ac, ",
+      "price": 119
+    },
+    {
+      "id": 5,
+      "name": "Ultrices nisl",
+      "rating": 4.5,
+      "description": "Phasellus condimentum, ante et dictum placerat,",
+      "price": 85
+    },
+    {
+      "id": 6,
+      "name": "Curabitur in elementum tortor",
+      "rating": 3.8,
+      "description": " Mauris convallis diam nibh, non malesuada ",
+      "price": 149
+    }
+  ],
+  "user": [
+    {
+      "id": "thung1",
+      "password": "12345",
+      "email": "thung@gmail.com",
+      "phone": "14891249832",
+      "address": "laflasfklsdalkfasl;",
+      "gender": "male"
+    }
+  ],
+  "order-list": [
+    {
+      "name": "Vivamus vitae",
+      "price": 199,
+      "qty": 4,
+      "id": 1
+    },
+    {
+      "name": "Fusce sit amet",
+      "price": 229,
+      "qty": 5,
+      "id": 2
+    },
+    {
+      "name": "Etiam volutpat aliquam",
+      "price": 99,
+      "qty": 6,
+      "id": 3
+    },
+    {
+      "name": "Ultrices nisl",
+      "price": 85,
+      "qty": 2,
+      "id": 4
+    },
+    {
+      "name": "Lorem ipsum dolor",
+      "price": 119,
+      "qty": 3,
+      "id": 5
+    },
+    {
+      "name": "Curabitur in elementum tortor",
+      "price": 149,
+      "qty": 1,
+      "id": 6
+    }
+  ],
+  "order": []
+}
